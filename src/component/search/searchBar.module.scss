@@ -1,0 +1,13 @@
+.icon {
+   color: rgb(169, 255, 179);
+   z-index: 999;
+   &:hover {
+      cursor: pointer;
+      color: rgb(255, 219, 219);
+      transform: scale(1.1);
+   }
+   &:active {
+      transform: scale(1);
+      color: rgb(169, 255, 179);
+   }
+}

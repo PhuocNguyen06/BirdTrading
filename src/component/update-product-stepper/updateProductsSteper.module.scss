@@ -1,0 +1,18 @@
+@use '../../style/scss/' as c;
+
+
+.container {
+   background-color: c.$template5;
+   border-radius: 10px;
+   padding: 1rem 5rem;
+   position: sticky;
+   transition: 0.5s linear;
+   top: calc(c.$h-header + 2rem);
+}
+
+.step {
+   z-index: 100;
+   &:hover {
+      cursor: pointer !important;
+   }
+}

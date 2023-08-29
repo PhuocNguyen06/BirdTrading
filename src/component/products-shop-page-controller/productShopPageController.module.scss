@@ -1,0 +1,22 @@
+
+@use '../../style/scss/' as c;
+
+
+.controller{
+   background-color: c.$template5;
+   display: flex;
+   justify-content: space-between;
+   padding: 1rem;
+   margin: 1rem 0;
+
+   border-radius: 0.8rem;
+   .right{
+      
+   }
+   .left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      justify-content: space-between;
+   }
+}

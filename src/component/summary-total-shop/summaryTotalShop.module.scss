@@ -1,0 +1,32 @@
+
+@use '../../style/scss/' as c;
+
+.container {
+   background-color: c.$template5;
+   border-radius: 1.6rem;
+   margin-top: 2rem;
+   height: 20rem;
+   display: flex;
+   .metric {
+      padding: 0 0 0 1.6rem;
+   width: fit-content;
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      flex: 1;
+      h4 {
+         font-size: 2.4rem;
+         margin: 0;
+         color: c.$templateConstrast4;
+      }
+      span {
+         color: c.$templateConstrast5;
+         font-size: 2rem;
+
+      }
+   }
+   .chart {
+      flex: 2.5;
+   }
+}

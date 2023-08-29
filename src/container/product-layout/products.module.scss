@@ -1,0 +1,12 @@
+@use '../../style/scss/' as c;
+
+.container {
+   width: 100%;
+   h2{
+      font-size: 3.5rem;
+      color: c.$templateConstrast5;
+      margin-bottom: 5rem;
+   }
+  
+
+}

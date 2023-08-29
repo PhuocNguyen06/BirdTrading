@@ -1,0 +1,53 @@
+@use "../../../style/scss/" as c;
+
+.container {
+    .notiContainer {
+        margin-top: 10px;
+        &:hover {
+            background-color: rgba(49, 49, 49, 0.331);
+            cursor: pointer;
+        }
+
+        .notiImg {
+            
+            img{
+                max-width: 50px;
+            }
+        }
+
+        .notiContent {
+            text-align: left;
+            width: 100%;
+            span {
+                font-size: 2.4rem;
+                // color: rgb(190, 190, 190);
+                color: c.$Dominant5;
+            }
+            p{
+                font-size: 2rem;
+                color: rgb(190, 190, 190);
+                margin: 0px 0px 0px 0px;
+                &:nth-child(1) {
+                    margin: 0px 0px 00px 0px;
+                }
+                &:nth-child(2) {
+                    margin: 0px 0px 10px 0px;
+                }
+            }
+
+            .notiTime {
+                flex-direction: end;
+                float: right; 
+            }
+
+        }
+    }
+}
+
+.divider {
+    border-top: 1px solid c.$Accent5;
+}
+
+.hightBackGround{
+    background-color:  rgb(30, 0, 7);
+}

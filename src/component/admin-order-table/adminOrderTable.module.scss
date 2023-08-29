@@ -1,0 +1,9 @@
+@use '../../style/scss/' as c;
+
+
+.container {
+   height: 65rem;
+   background-color: c.$templateTable;
+   border-radius: 10px;
+   margin-bottom: 1rem;
+}

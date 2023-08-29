@@ -1,0 +1,70 @@
+@use "../../style/scss/" as c;
+
+@mixin button(
+  $color: c.$Complementary0,
+) {
+  text-transform: none;
+  color: $color;
+
+}
+
+.container {
+  Button {
+    @include button();
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .numUnread {
+        font-size: 14px;
+        font-weight: bold;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0px 4px 4px 0px;
+        color: c.$Accent6;
+    }
+  }
+
+  .css-3bmhjh-MuiPaper-root-MuiPopover-paper {
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+    background-color: black;
+  }
+}
+
+.warrperBtnClose {
+  position: relative;
+  width: 100%;
+  background-color: c.$templateConstrast4;
+  display: flex;
+  justify-content: flex-end;
+  // padding: 10px;
+  text-align: right;
+  .btnClose {
+    font-size: 22px;
+    padding: 10px;
+    color: c.$Accent4;
+    z-index: 2;
+    &:hover {
+      background-color: c.$Accent4;
+      color: c.$Dominant1;
+      cursor: pointer;
+    }
+  }
+}
+
+.messagecontent {
+  min-height: 60vh;
+  max-height: 60vh;
+  min-width: 40vw;
+  max-width: 40vw;
+
+  .userList {
+    border: 1px solid #a19e9e;
+  }
+
+  .messageChat {
+    border: 1px solid #a19e9e;
+  }
+}

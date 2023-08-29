@@ -1,0 +1,54 @@
+@use "../../style/scss/" as c;
+
+.container {
+   height: c.$h-header;
+   background-color: c.$templateConstrast4;
+   position: fixed;
+   z-index: 1000;
+   top: 1rem;
+   left: calc(16.6%);
+   right: 1rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 10px;
+   gap: 10px;
+   border-radius: 1rem;
+   .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .logo {
+         width: calc(c.$h-header - 1rem);
+         padding: 1rem;
+         img {
+            width: 100%;
+         }
+     
+      }
+      .shopName {
+         font-family: "SeoulHangang";
+         font-style: normal;
+         font-weight: 300;
+         font-size: 4rem;
+         /* f/1 */
+         color: c.$template5;
+      }
+   }
+   .left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .iconContainer {
+         display: flex;
+         gap: 1rem;
+         justify-content: space-between;
+      }
+   }
+}
+.gap {
+   height: c.$h-header;
+   width: 100%;
+}

@@ -1,0 +1,16 @@
+
+@use '../../style/scss/' as c;
+
+.rightContent {
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   height: 100%;
+}
+
+
+.content {
+   display: flex;
+   height: 100%;
+
+}

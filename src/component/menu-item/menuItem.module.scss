@@ -1,0 +1,30 @@
+@use '../../style/scss' as c;
+.container {
+   display: flex;
+   justify-content: flex-start !important;
+   align-items: center;
+   gap: 0.8rem;
+   text-transform: none !important;
+   
+   .icon {
+   }
+   .title {
+      span {
+         font-family: "SeoulHangang";
+         font-style: normal;
+         font-weight: 400;
+         font-size: 2rem;
+         line-height: 24px;
+         /* identical to box height */
+
+         /* f/1 */
+
+         color: c.$template5;
+      }
+   }
+}
+
+.active {
+   background-color: rgba(95, 95, 95, 0.349) !important;
+   pointer-events: none;
+}

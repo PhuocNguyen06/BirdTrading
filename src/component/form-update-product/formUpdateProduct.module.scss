@@ -1,0 +1,23 @@
+@use "../../style/scss/" as c;
+
+.container {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+   .form {
+      background-color: c.$template5;
+      width: 100%;
+      border-radius: 1rem;
+   }
+   h4 {
+      font-size: 2rem;
+      padding: 0;
+      margin: 0;
+   }
+   .fieldTitle {
+      font-size: 2rem;
+      font-weight: 500;
+   }
+ 
+}

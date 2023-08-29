@@ -1,0 +1,83 @@
+@use "../../style/scss/" as c;
+
+@mixin button(
+  $padding: 1rem 2rem,
+  $color: c.$Dominant4,
+  $backgroundColor: c.$Complementary0
+) {
+  border: 0.1rem solid c.$Complementary0;
+  font-size: 2.4rem;
+//   font-family: c.$Secondary;
+  padding: $padding;
+  text-transform: none;
+  color: $color;
+  background-color: $backgroundColor;
+}
+
+.container {
+    position: relative;
+    .notiIcon {
+        // padding: 3px 0px 0px 0px;
+        // width: 4rem;
+        // height: 4.6rem;
+        overflow: hidden;
+    }
+}
+.popoverNoti{
+    :global(.MuiPaper-root) {
+        margin-top: 0px;
+        /* From https://css.glass */
+        background: rgba(21, 24, 34, 0.59);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20.4px);
+        -webkit-backdrop-filter: blur(20.4px);
+        border: 1px solid rgba(22, 25, 36, 0.6);
+        max-height: 500px;
+        max-width: 400px;
+        min-width: 400px;
+      }
+
+    .notiContainer {
+        .notiList {
+            text-align: center;
+            padding: 0;
+            margin: auto 20px;
+            overflow: auto;
+            height: 100%;
+            .titleNoti {
+                font-size: 24px;
+                color: c.$Dominant2;
+            }
+            .hrCustom {
+                margin: 0.2rem auto;
+                height: 0.1rem;
+                background-color: c.$Accent1;
+                width: 80%;
+            }          
+            
+        }
+        .emtyNotiImage {
+            max-height: 500px;
+            max-width: 400px;
+        }
+
+    }
+
+    .btnViewMore {
+        @include button();
+        width: 100%;
+        // position: absolute;
+        // z-index: 1000;
+        // bottom: 0;
+        // left: 0;
+        &:hover {
+          background-color: c.$Dominant5;
+          color: c.$Complementary0;
+        }
+        
+    }
+}
+
+.divider {
+border-top: 1px solid c.$Accent5;
+}

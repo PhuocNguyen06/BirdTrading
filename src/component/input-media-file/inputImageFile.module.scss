@@ -1,0 +1,121 @@
+@use "../../style/scss/" as c;
+
+.container {
+   border: 1px dashed rgba(255, 1, 1, 0.44);
+   width: fit-content;
+
+   &:hover {
+      border: 1px dashed rgb(255, 0, 0);
+      cursor: pointer;
+   }
+   height: 10rem;
+   width: 10rem;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   user-select: none;
+}
+.ripple {
+   background-position: center;
+   transition: background 0.8s;
+}
+.ripple:hover {
+   background: #f6000020 radial-gradient(circle, transparent 1%, #e3000021 1%) center/15000%;
+   cursor: pointer;
+}
+.ripple:active:hover {
+   background-color: #fa020228;
+   background-size: 100%;
+   transition: background 0s;
+}
+
+.imageAdded {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   span {
+      color: red;
+      font-size: 1.6rem;
+   }
+}
+.previewImg {
+   position: relative;
+   img {
+      width: 100%;
+   }
+   .control {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      justify-content: space-around;
+   }
+   &:hover {
+      backdrop-filter: brightness(50%);
+      .control {
+         display: flex;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         justify-content: space-around;
+         /* From https://css.glass */
+         background: rgba(236, 232, 232, 0.2);
+         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+         backdrop-filter: blur(5px);
+         -webkit-backdrop-filter: blur(5px);
+         border: 1px solid rgba(50, 50, 50, 0.3);
+      }
+   }
+}
+
+.modal {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: c.$template5;
+   .title {
+      margin: 1rem auto;
+      text-align: center;
+      span {
+         font-weight: 500;
+
+         font-size: 3rem;
+      }
+   }
+   .control {
+      display: flex;
+      background-color: c.$templateTable;
+
+      .preview {
+         width: 450px;
+         flex: 1;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-between;
+         text-align: center;
+         .imagePreview {
+            overflow: hidden;
+            height: 400px;
+            width: 400px;
+            border: 1px solid red;
+         }
+         span {
+            font-size: 2rem;
+
+         }
+         .buttonControl {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+         }
+      }
+   }
+}
+.videoControl {
+   padding: 2rem;
+}
